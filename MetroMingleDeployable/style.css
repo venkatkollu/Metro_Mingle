@@ -43,4 +43,45 @@ button:hover {
     color: #023e8a;
     font-weight: bold;
     min-height: 1.5em;
+}
+
+.options {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 1.5rem 2rem;
+    min-width: 220px;
+    max-width: 260px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+.card h2 {
+    color: #0096c7;
+    margin-bottom: 0.5em;
+}
+.card p {
+    color: #333;
+    margin-bottom: 1em;
+}
+@media (max-width: 800px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 1.5rem;
+        width: 90%;
+        max-width: 350px;
+    }
 } 
